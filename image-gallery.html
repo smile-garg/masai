@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery section {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <section>
+            <img src="image1.jpg" alt="Beautiful Landscape">
+            <a href="https://example.com/landscape" target="_blank">Learn More</a>
+        </section>
+
+        <section>
+            <img src="image2.jpg" alt="City Skyline at Night">
+            <a href="https://example.com/city" target="_blank">Explore More</a>
+        </section>
+
+        <section>
+            <img src="image3.jpg" alt="Serene Beach View">
+            <a href="https://example.com/beach" target="_blank">Discover More</a>
+        </section>
+    </div>
+
+</body>
+</html>
