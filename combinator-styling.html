@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Styling</title>
+    <style>
+        div p {
+            color: blue;
+        }
+
+        div > p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a direct child of div.</p>
+        <section>
+            <p>This is inside a section, nested within div.</p>
+        </section>
+    </div>
+</body>
+</html>

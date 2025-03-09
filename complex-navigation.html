@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2 - Complex Navigation Styling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #333;
+            padding: 15px;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .section-1 a {
+            color: lightblue;
+        }
+
+        .section-2 a {
+            color: lightgreen;
+        }
+
+        .section-3 a {
+            color: lightcoral;
+        }
+
+        .section > a {
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        .navbar a:active {
+            color: orange;
+        }
+
+        a[href^="https"] {
+            color: red !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="section section-1">
+            <a href="#">Home</a>
+            <div>
+                <a href="#">Sub Link 1</a>
+                <a href="#">Sub Link 2</a>
+            </div>
+        </div>
+
+        <div class="section section-2">
+            <a href="#">About</a>
+            <div>
+                <a href="#">Team</a>
+                <a href="https://example.com">External Link</a>
+            </div>
+        </div>
+
+        <div class="section section-3">
+            <a href="#">Services</a>
+            <div>
+                <a href="#">Web Design</a>
+                <a href="#">SEO</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
