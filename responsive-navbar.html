@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Navbar</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px 20px;
+        }
+
+        /* Navigation List */
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Hide hamburger menu initially */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Medium Screens: Stack items vertically */
+        @media (max-width: 1023px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-list {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Small Screens: Show Hamburger Menu */
+        @media (max-width: 767px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #333;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                padding: 10px 0;
+            }
+            .nav-list.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.getElementById("mobile-menu").addEventListener("click", function() {
+            document.querySelector(".nav-list").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

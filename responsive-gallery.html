@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Gallery</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: #3498db;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        /* Responsive Grid Fix */
+        @media (min-width: 1025px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .gallery {
+                grid-template-columns: 1fr; /* 1 column for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <div class="gallery-item">1</div>
+        <div class="gallery-item">2</div>
+        <div class="gallery-item">3</div>
+        <div class="gallery-item">4</div>
+        <div class="gallery-item">5</div>
+        <div class="gallery-item">6</div>
+        <div class="gallery-item">7</div>
+        <div class="gallery-item">8</div>
+    </div>
+
+</body>
+</html>
