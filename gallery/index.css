@@ -1,0 +1,28 @@
+/* style.css */  
+
+.gallery {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive Columns */  
+    grid-gap: 10px;  
+    padding: 10px;  
+}  
+
+.gallery img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
+    transition: transform 0.3s ease; /* Optional: Add a smooth transition */  
+}  
+
+.gallery img:hover {  
+    transform: scale(1.05); /* Optional: Zoom on hover */  
+}  
+
+/* Optional: Adjustments for smaller screens (example) */  
+@media (max-width: 600px) {  
+    .gallery {  
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller columns on smaller screens */  
+        grid-gap: 5px;  
+    }  
+}  

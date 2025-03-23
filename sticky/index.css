@@ -1,0 +1,30 @@
+/* styles.css */  
+
+body {  
+    margin: 0;  
+    padding-bottom: 50px; /* Add padding to the bottom to prevent content from being hidden by the footer */  
+}  
+
+header {  
+    background-color: #333;  
+    color: white;  
+    padding: 10px;  
+    text-align: center;  
+    position: sticky;  
+    top: 0;  
+    z-index: 100; /* Ensure the header stays on top */  
+}  
+
+main {  
+    padding: 20px;  
+}  
+
+footer {  
+    background-color: #333;  
+    color: white;  
+    padding: 10px;  
+    text-align: center;  
+    position: fixed;  
+    bottom: 0;  
+    width: 100%;  
+}  

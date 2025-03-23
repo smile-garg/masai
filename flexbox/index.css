@@ -1,0 +1,15 @@
+.container {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 200px; /* Set a height for vertical alignment to be visible */  
+    background-color: #f0f0f0;  
+   }  
+   
+   .item {  
+    background-color: #3498db;  
+    color: white;  
+    padding: 20px;  
+    margin: 10px;  
+    text-align: center;  
+   }  

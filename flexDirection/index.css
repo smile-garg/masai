@@ -1,0 +1,17 @@
+/* style.css */  
+
+.container {  
+    display: flex; /* Enable Flexbox */  
+    /* flex-direction: row; /* Default value, arranges items in a row.  Main axis is horizontal */  
+    flex-direction: column; /* Arranges items in a column.  Main axis is vertical */  
+    background-color: #f0f0f0;  
+    padding: 20px;  
+}  
+
+.item {  
+    background-color: lightblue;  
+    margin: 10px;  
+    padding: 20px;  
+    text-align: center;  
+    border: 1px solid #ccc;  
+}  

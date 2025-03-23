@@ -1,0 +1,51 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 20px;  
+    background-color: #f8f8f8;  
+}  
+
+.container {  
+    display: flex;  
+    gap: 20px;  
+}  
+
+.left-column, .right-column {  
+    background-color: white;  
+    flex: 1;  
+    padding: 20px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    border-radius: 8px;  
+}  
+
+h1 {  
+    font-size: 24px;  
+    margin-bottom: 20px;  
+}  
+
+.item {  
+    margin-bottom: 20px;  
+}  
+
+.item img {  
+    width: 100%;  
+    border-radius: 8px;  
+}  
+
+.explore, .offers {  
+    color: #007BFF;  
+    cursor: pointer;  
+    margin-top: 20px;  
+}  
+
+.brand {  
+    margin-top: 20px;  
+}  
+
+.brand-item {  
+    margin-bottom: 10px;  
+}  
+
+.brand-item p {  
+    margin: 0;  
+}  
