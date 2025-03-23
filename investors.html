@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investors Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 250px;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card h2 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Strategic Investors</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Investor Image">
+                <h2>Vijay Shekhar Sharma</h2>
+                <p>Founder & CEO, Paytm</p>
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="Investor Image">
+                <h2>Kunal Shah</h2>
+                <p>Founder, CRED</p>
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="Investor Image">
+                <h2>Amrish Rau</h2>
+                <p>CEO, Pine Labs</p>
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="Investor Image">
+                <h2>Sampad Swain</h2>
+                <p>Co-Founder & CEO, Instamojo</p>
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="Investor Image">
+                <h2>Ankush Sachdeva</h2>
+                <p>Co-Founder & CEO, ShareChat</p>
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="Investor Image">
+                <h2>Bhanu Pratap Singh</h2>
+                <p>Co-Founder & CTO, ShareChat</p>
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png" alt="Investor Image">
+                <h2>Farid Ahsan</h2>
+                <p>Co-Founder & COO, ShareChat</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
